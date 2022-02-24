@@ -4,16 +4,16 @@
 <title>Lab 6-6</title> 
 
 <script type="text/javascript">
-<!--
+
 
 function openWindow(){
 var info="";
 
-  info += "Welcome, " +               ;         //Add appCodeName here
+  info += "Welcome, " + "appCodeName";         //Add appCodeName here
   info += " user!\nYou are using the "; 
-  info +=      + " browser,\nversion ";        //Add appName here
-  info +=      + ".\nYour user agent ";       //Add appVersion here
-  info += "information is " +         ;          //Add userAgent here
+  info += "appName" + " browser,\nversion ";        //Add appName here
+  info += "appVersion" + ".\nYour user agent ";       //Add appVersion here
+  info += "information is " + "userAgent";          //Add userAgent here
 
   alert(info);
 }
@@ -29,6 +29,8 @@ var info="";
 <script type="text/javascript">
 
       //Add userAgent here to write to browser window
+  document.write("<p>The Property <strong><em>navigator.useragent</em></strong>" + "returns:<br /><strong><font color='#ff0000'>" + navigator.userAgent + "</font></strong></P>");
+  
 
 </script>
 

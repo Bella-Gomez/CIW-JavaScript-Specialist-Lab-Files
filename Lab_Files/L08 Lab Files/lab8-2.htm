@@ -8,22 +8,24 @@
 
     
 // create a class here
-class fncn {
+class device {
     constructor(name, brand) {
         this.name= name;
 
         this.brand= brand;
 
-        this.display= display;
     }
     
     display() {
-        document.write('The name of the device is ' + this.name + ' and its brand is ' + this.brand);
+        document.write('The name of the device is ' + this.name + ' and its brand is ' + this.brand + '.');
     }
+
 
 }
 
+var fncn = new device( "Vostro","Dell");
 
+fncn.display();
 
 //-->
 </script>

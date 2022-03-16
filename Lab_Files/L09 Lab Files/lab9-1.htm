@@ -20,6 +20,13 @@ function changeButton()
 	var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "Uncle Sam!";
 	alert("Hello " + header);
   }
+
+  if(document.getElementById('radiobuttonYoutube').checked === true)
+  {
+	radioButton = document.getElementById('radiobuttonYoutube').value;
+	var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "Viewer!";
+	alert("Hello " + header);
+  }
   getTest();
 }
 -->
@@ -33,9 +40,9 @@ function changeButton()
 <p>Please select your favorite type of Web site:</p>
 <input id="radiobuttonWebdev" type="radio" name="group1" value="Web_Development" checked>Web Development</input><br />
 <input id="radiobuttonGovernment" type="radio" name="group1" value="Government">U.S. Government</input><br />
-<input id="a" type="radio" name="group1" value="A">A</input><br />
-<input id="b" type="radio" name="group1" value="B">B</input><br />
-<input id="c" type="radio" name="group1" value="C">C</input><br />
+<input id="a" type="radio" name="group1" value="Youtube">Youtube</input><br />
+<input id="b" type="radio" name="group1" value="Spotify">Spotify</input><br />
+<input id="c" type="radio" name="group1" value="Twitch">Twitch</input><br />
 
 
 <script type="text/javascript">
@@ -53,6 +60,21 @@ function getTest()
   if(radioButton == "Government")
   {
 	document.write("<p>Here's a great site if you're interested in U.S. government:</p><a href=http://www.whitehouse.gov/>The White House</a>");
+  }
+
+  if(radioButton == "Youtube") 
+  {
+  document.write("<p>Here's a great site if you need entertainment: </p> <a href=https://www.youtube.com/>Youtube</a>");
+  }
+
+  if(radioButton == "Spotify") 
+  {
+  document.write("<p>Here's a great site if you like to listen to music: </p> <a href=https://open.spotify.com/>Spotify</a>");
+  }
+
+  if(radioButton == "Twitch") 
+  {
+  document.write("<p>Here's a great site if you like to listen to music: </p> <a href=https://www.twitch.tv/>Twitch</a>");
   }
 }
 -->

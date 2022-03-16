@@ -5,7 +5,7 @@
 <title>Lab 9-1</title>
 
 <script type="text/javascript">
-<!--
+
 function changeButton()
 {
   if(document.getElementById('radiobuttonWebdev').checked === true)
@@ -21,15 +21,29 @@ function changeButton()
 	alert("Hello " + header);
   }
 
-  if(document.getElementById('radiobuttonYoutube').checked === true)
+  if(document.getElementById('a').checked === true)
   {
-	radioButton = document.getElementById('radiobuttonYoutube').value;
+	radioButton = document.getElementById('a').value;
 	var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "Viewer!";
+	alert("Hello " + header);
+  }
+
+  if(document.getElementById('b').checked === true)
+  {
+	radioButton = document.getElementById('b').value;
+	var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "listen!";
+	alert("Hello " + header);
+  }
+
+  if(document.getElementById('c').checked === true)
+  {
+	radioButton = document.getElementById('c').value;
+	var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "viewer!";
 	alert("Hello " + header);
   }
   getTest();
 }
--->
+
 </script>
 </head>
 
@@ -46,7 +60,7 @@ function changeButton()
 
 
 <script type="text/javascript">
-<!--
+
 function getTest()
 {
   document.write("<h3>CIW JavaScript Specialist</h3>");
@@ -74,10 +88,10 @@ function getTest()
 
   if(radioButton == "Twitch") 
   {
-  document.write("<p>Here's a great site if you like to listen to music: </p> <a href=https://www.twitch.tv/>Twitch</a>");
+  document.write("<p>Here's a great site if you like to watch people: </p> <a href=https://www.twitch.tv/>Twitch</a>");
   }
 }
--->
+
 </script>
 
 <p>

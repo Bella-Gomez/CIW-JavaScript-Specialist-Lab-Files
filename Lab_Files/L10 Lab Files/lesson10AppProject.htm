@@ -7,16 +7,18 @@
 <script type="text/javascript">
 
     function validate(form) {
-        var len = form.expMo.length;
-
-        for(var i = 0; i < len; i++) {
-            if(form.ccard.value = "visa") {
-                
-            }
+        if (document.getElementById("visaCard").checked === true && form.number.value.length !== 16 && form.number.value.charAt(0) !== "4" ) {
+             alert("Seems like you don't have 16 digit Visa card number, or, the first digit is not 4.")
         }
-    }
+        if (document.getElementById("mCard").checked === true && form.number.value.length !== 16 && form.number.value.charAt(0) !== "5" ) {
+            alert("Seems like you don't have 16 digit Master Card number, or, the first digit is not 5.")
+        }
+ 
+        if (document.getElementById("amexCard").checked === true && form.number.value.length !== 15 && form.number.value.charAt(0) !== "3" ) {
+            alert("Seems like you don't have 15 digit American Express Card number, or, the first digit is not 3.")
+        }
 
-  
+    }
 
 //-->
 </script>
@@ -29,15 +31,15 @@
 <hr />
 <form name="ccForm" action="post">
 <p>
-<input type="radio" name="ccard" value="visa" />
+<input type="radio" id="visaCard" name="ccard" value="visa" />
 Visa
 </p>
 <p>
-<input type="radio" name="ccard" value="mc" />
+<input type="radio" id="mCard" name="ccard" value="mc" />
 MasterCard
 </p>
 <p>
-<input type="radio" name="ccard" value="amex" />
+<input type="radio" id="amexCard" name="ccard" value="amex" />
 American Express
 </p>
 <p>
